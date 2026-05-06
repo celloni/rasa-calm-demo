@@ -34,8 +34,9 @@ class CustomCompactLLMCommandGenerator(CompactLLMCommandGenerator):
         Returns:
             The parsed commands.
         """
+        structlogger.debug("Returned actions from LLM", actions=actions)
         commands = parse_commands_using_command_parsers(
-            actions, flows, False, [BeginFlowCommand], [StartFlowCommand]
+            actions, flows, False, [StartFlowCommand]
         )
 
         if not commands:

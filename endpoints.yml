@@ -80,7 +80,7 @@ model_groups:
   - id: rephraser_model_group
     models:
       - provider: sagemaker_chat
-        model: $AWS_SAGEMAKER_REPHRASER}
+        model: ${AWS_SAGEMAKER_REPHRASER}
         aws_region_name: eu-central-1
         aws_session_name: civr-sagemaker-session
         temperature: 0.1

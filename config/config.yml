@@ -1,12 +1,14 @@
 recipe: default.v1
-language: "de"  # Default language: German
-additional_languages:
-  - "it"   # Italian
-  - "en"   # English
-  - "fr"   # French
+language: "en"  # Default language: German
+#language: "de"  # Default language: German
+#additional_languages:
+#  - "it"   # Italian
+#  - "en"   # English
+#  - "fr"   # French
 pipeline:
   - name: NLUCommandAdapter
   - name: custom.compact_llm_command_generator_override_component.CustomCompactLLMCommandGenerator
+    prompt_template: data/prompts/command_prompt_v3_gpt_4o_2024_11_20_template.jinja2
     llm:
       model_group: command_generator_model_group
     user_input:
