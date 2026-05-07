@@ -1,10 +1,9 @@
 recipe: default.v1
-language: "en"  # Default language: German
-#language: "de"  # Default language: German
-#additional_languages:
-#  - "it"   # Italian
-#  - "en"   # English
-#  - "fr"   # French
+language: "en"  # Default language: English
+additional_languages:
+  - "it"   # Italian
+  - "de"   # German
+  - "fr"   # French
 pipeline:
   - name: NLUCommandAdapter
   - name: custom.compact_llm_command_generator_override_component.CustomCompactLLMCommandGenerator
