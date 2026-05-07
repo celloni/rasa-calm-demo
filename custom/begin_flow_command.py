@@ -30,7 +30,7 @@ class BeginFlowCommand(StartFlowCommand):
     @classmethod
     def command(cls) -> str:
         """Returns the command type."""
-        return "begin flow"
+        return "start flow"
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> BeginFlowCommand:

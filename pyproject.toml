@@ -12,15 +12,14 @@ package-mode = false
 
 [[tool.poetry.source]]
 name = "rasa-pro"
-url = "https://europe-west3-python.pkg.dev/rasa-releases/rasa-pro-python/simple"
+url = "https://artifactory.swisscom.com/artifactory/api/pypi/rasa-pro-pypi-remote/simple/"
 priority = "supplemental"
 
 [tool.poetry.dependencies]
 python = ">=3.10.0,<3.14"
 
 [tool.poetry.dependencies.rasa-pro]
-version = "3.14.0"
-allow-prereleases = true
+version = "3.14.20"
 
 [tool.poetry.group.dev.dependencies]
 toml = "^0.10.2"
